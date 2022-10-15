@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="components/css/style.css"> 
+   
+  <title>Document</title>
+</head>
+
+<body>  
+  <a id="top" ></a>
+
+  <canvas id="space"></canvas>
+
+  
+  <div class="content">
+    
+    <div id="info">
+        <ul>
+          <li><a onclick="tabchange(this)" data-translate="projects" href="#"></a></li>
+          <li><a onclick="tabchange(this)" data-translate="about" href="#"></a></li>
+          <li><a onclick="tabchange(this)" data-translate="contact" href="#"></a></li>
+        </ul>
+      </div>
+      <div id="lang">
+        <label class="dropdown">
+    
+          <div class="dd-button">
+            <img src="components/images/globe.png" >
+          </div>
+        
+          <input type="checkbox" class="dd-input" id="test">
+        
+          <ul class="dd-menu">
+            <li onclick="change_lang('0')" >English</li>
+            <li onclick="change_lang('1')">Español</li>
+            <li onclick="change_lang('2')">Français</li>
+          </ul>
+          
+        </label>
+      </div>
+  </div>
+  <div class="projects">
+    <ul class="card-wrapper">
+      <li class="card">
+        <canvas id="0" ></canvas>
+        <h3>
+          A Super Wonderful Headline
+          <div class="buttonContainer">
+             <div onclick="changeClass(this)" class="button"></div>
+             
+          </div>
+         <img src="components/images/git.png">
+         <button onclick="fullscreenCanvas(this)"><img src="components/images/fullscreen.png"></button>
+        </h3>
+      </li>
+      <li class="card">
+        <canvas id="1" ></canvas>
+        <h3>
+          A Super Wonderful Headline
+          <div class="buttonContainer">
+             <div onclick="changeClass(this)" class="button"></div>
+             
+          </div>
+         <img src="components/images/git.png">
+         <button onclick="fullscreenCanvas(this)"><img src="components/images/fullscreen.png"></button>
+        </h3>
+      </li>
+
+    </ul>
+
+  </div>
+  <div class="about" >
+    <h1>about page</h1>
+  </div>
+  <div class="contact">
+    <h1>contact page</h1>
+  </div>
+
+  <a id="backToTop" href="#top" >↑<br>top</a>
+  <nav>
+    <script src="components/js/pr.js"></script>
+    <script src="components/js/translate.js"></script>
+    <script src="components/js/dom.js"></script>
+    <script src="components/canvas/0.js"></script>
+    <script src="components/canvas/1.js"></script>
+  </nav>
+  
+  
+</body>
+</html>
